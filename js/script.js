@@ -24,10 +24,11 @@ if(playerInput == '1'){
   playerMove = 'kamień';
 } else if (playerInput == '2'){
     playerMove = 'papier';
-} else (playerInput == '3')
+} else (playerInput == '3'){
     plyerMove = 'nożyce';
+}
 
-    printMessage('Mój ruch to: ' + playerMove);
+printMessage('Mój ruch to: ' + playerMove);
 
 
 if( computerMove == 'kamień' && playerMove == 'papier'){
