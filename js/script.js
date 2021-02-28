@@ -24,8 +24,25 @@ if(playerInput == '1'){
   playerMove = 'kamień';
 } else if (playerInput == '2'){
     playerMove = 'papier';
-} else if (playerInput == '3'){
+} else (playerInput == '3')
     plyerMove = 'nożyce';
-}
 
-printMessage('Twój ruch to: ' + playerMove);
+    printMessage('Mój ruch to: ' + playerMove);
+
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+} else if (computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ty przegywasz!');
+} else if (computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Ty przegywasz!');
+} else if (computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Ty przegywasz!');
+} else if (computerMove ==  playerMove) {
+    printMessage('To remis!');
+} else
+    printMessage('Nieznany ruch');
