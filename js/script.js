@@ -12,7 +12,7 @@ if(randomNumber == 1){
     computerMove = 'nożyce';
 }
 
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('Twój ruch to: ' + computerMove);
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
@@ -24,8 +24,8 @@ if(playerInput == '1'){
   playerMove = 'kamień';
 } else if (playerInput == '2'){
     playerMove = 'papier';
-} else (playerInput == '3'){
-    plyerMove = 'nożyce';
+} else if (playerInput == '3'){
+    playerMove = 'nożyce';
 }
 
 printMessage('Mój ruch to: ' + playerMove);
@@ -45,5 +45,6 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Ty przegywasz!');
 } else if (computerMove ==  playerMove) {
     printMessage('To remis!');
-} else
+} else {
     printMessage('Nieznany ruch');
+}
