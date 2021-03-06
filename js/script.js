@@ -75,6 +75,7 @@ function displayResult(argComputerMove, argPlayerMove){
         printMessage('Nieznany ruch')
     }
   }
+  displayResult (argComputerMove, argPlayerMove)
 
 /*if( computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Ty wygrywasz!');
